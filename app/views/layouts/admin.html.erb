@@ -17,7 +17,7 @@
       <div class="row">
         <nav class="navbar-sidebar-horizontal navbar navbar-expand-lg navbar-light bg-white fixed-top">
           <a class="navbar-brand" href="#">
-            <img src="assets/img/teambros-logo-dark.png" width="145" height="32.3" alt="Teambros">
+            <img src="/assets/teambros-logo-dark.png" width="145" height="32.3" alt="Teambros">
           </a>
           <button class="hamburger hamburger--slider" type="button" data-target=".sidebar-horizontal" aria-controls="sidebar-horizontal" aria-expanded="false" aria-label="Toggle Main Menu">
             <span class="hamburger-box">
@@ -203,20 +203,28 @@
                     Yohan Lim
                   </div>
                   <div class="profile-picture bg-gradient bg-primary has-message float-right">
-                    <img src="assets/img/profile-pic.jpg" width="44" height="44">
+                    <img src="/assets/profile-pic.jpg" width="44" height="44">
                   </div>
                 </a>
+
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-dropdown-navbar-profile">
-                  <li><a class="dropdown-item" href="profiles-member-profile.html">Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="profiles-member-profile.html">Profile</a>
+                  </li>
                   <li>
                     <a class="dropdown-item" href="mail-inbox.html">
                       Messages
                       <span class="badge badge-danger badge-pill float-right">3</span>
                     </a>
                   </li>
-                  <li><a class="dropdown-item" href="profiles-member-profile.html">Settings</a></li>
-                  <li><a class="dropdown-item" href="sisu-lock-screen.html">Logout</a></li>
+                  <li>
+                    <a class="dropdown-item" href="profiles-member-profile.html">Settings</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/users/sign_out" data-method="delete">Logout</a>
+                  </li>
                 </ul>
+
               </li>
             </ul>
           </div>
