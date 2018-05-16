@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   root :to => 'admin#index'
 
-  get '/admin' => 'admin#index'
+  # get '/admin' => 'admin#index'
 
 end

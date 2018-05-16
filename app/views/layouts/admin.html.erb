@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+  	<link rel="icon" href="assets/img/favicon.png">
+    <title>TeambrosDashboard</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+  </body>
+</html>

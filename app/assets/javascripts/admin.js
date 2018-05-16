@@ -1,0 +1,14 @@
+//= require jquery-3.1.1.min.js
+//= require popper.min.js
+//= require bootstrap.min.js
+//= require mdb.min.js
+//= require velocity.min.js
+//= require velocity.ui.min.js
+//= require jquery.mCustomScrollbar.concat.min.js
+//= require jquery.visible.min.js
+//= require ie10-viewport-bug-workaround.js
+//= require chart.bundle.min.js
+//= require jquery.vmap.min.js
+//= require jquery.vmap.usa.js
+//= require holder.min.js
+//= require scripts.js

@@ -16,3 +16,5 @@ module TeambrosDashboard
     # -- all .rb files in that directory are automatically loaded.
   end
 end
+
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
