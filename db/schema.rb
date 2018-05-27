@@ -10,7 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180516132149) do
+ActiveRecord::Schema.define(version: 20180527105829) do
+
+  create_table "clients", force: :cascade do |t|
+    t.integer "client_id"
+    t.string "fullName"
+    t.string "lastName"
+    t.string "email"
+    t.string "assignedTrainer"
+    t.string "contact"
+    t.string "otherNumber"
+    t.string "address"
+    t.string "birthday"
+    t.string "gender"
+    t.string "clientStatus"
+    t.string "sessionCost"
+    t.string "occupation"
+    t.string "notes"
+    t.string "emergencyContact"
+    t.string "imageUrl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

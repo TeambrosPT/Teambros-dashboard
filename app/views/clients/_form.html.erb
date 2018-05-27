@@ -1,0 +1,97 @@
+<%= form_with(model: client, local: true) do |form| %>
+  <% if client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.number_field :client_id, id: :client_client_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fullName %>
+    <%= form.text_field :fullName, id: :client_fullName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lastName %>
+    <%= form.text_field :lastName, id: :client_lastName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :client_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :assignedTrainer %>
+    <%= form.text_field :assignedTrainer, id: :client_assignedTrainer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact %>
+    <%= form.text_field :contact, id: :client_contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :otherNumber %>
+    <%= form.text_field :otherNumber, id: :client_otherNumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :client_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthday %>
+    <%= form.text_field :birthday, id: :client_birthday %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :client_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :clientStatus %>
+    <%= form.text_field :clientStatus, id: :client_clientStatus %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sessionCost %>
+    <%= form.text_field :sessionCost, id: :client_sessionCost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :occupation %>
+    <%= form.text_field :occupation, id: :client_occupation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notes %>
+    <%= form.text_field :notes, id: :client_notes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :emergencyContact %>
+    <%= form.text_field :emergencyContact, id: :client_emergencyContact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :imageUrl %>
+    <%= form.text_field :imageUrl, id: :client_imageUrl %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @client.client_id %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @client.fullName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @client.lastName %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @client.email %>
+</p>
+
+<p>
+  <strong>Assignedtrainer:</strong>
+  <%= @client.assignedTrainer %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @client.contact %>
+</p>
+
+<p>
+  <strong>Othernumber:</strong>
+  <%= @client.otherNumber %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @client.address %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @client.birthday %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @client.gender %>
+</p>
+
+<p>
+  <strong>Clientstatus:</strong>
+  <%= @client.clientStatus %>
+</p>
+
+<p>
+  <strong>Sessioncost:</strong>
+  <%= @client.sessionCost %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @client.occupation %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @client.notes %>
+</p>
+
+<p>
+  <strong>Emergencycontact:</strong>
+  <%= @client.emergencyContact %>
+</p>
+
+<p>
+  <strong>Imageurl:</strong>
+  <%= @client.imageUrl %>
+</p>
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
