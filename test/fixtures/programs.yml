@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  program_id: 1
+  programName: MyString
+  sessionPerWeek: MyString
+  numberOfSessions: MyString
+  description: MyString
+
+two:
+  program_id: 1
+  programName: MyString
+  sessionPerWeek: MyString
+  numberOfSessions: MyString
+  description: MyString

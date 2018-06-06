@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180527105829) do
+ActiveRecord::Schema.define(version: 20180531095902) do
 
   create_table "clients", force: :cascade do |t|
     t.integer "client_id"
@@ -29,6 +29,37 @@ ActiveRecord::Schema.define(version: 20180527105829) do
     t.string "notes"
     t.string "emergencyContact"
     t.string "imageUrl"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "programs", force: :cascade do |t|
+    t.integer "program_id"
+    t.string "programName"
+    t.string "sessionPerWeek"
+    t.string "numberOfSessions"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "registered_programs", force: :cascade do |t|
+    t.integer "registeredProgram_id"
+    t.integer "session_id"
+    t.integer "program_id"
+    t.integer "user_id"
+    t.integer "client_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sessions", force: :cascade do |t|
+    t.integer "session_id"
+    t.string "sessionName"
+    t.string "duration"
+    t.float "cost"
+    t.string "defaultLocation"
+    t.integer "maxNumber"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

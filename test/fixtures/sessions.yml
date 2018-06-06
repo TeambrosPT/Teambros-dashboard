@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  session_id: 1
+  sessionName: MyString
+  duration: MyString
+  cost: 1.5
+  defaultLocation: MyString
+  maxNumber: 1
+
+two:
+  session_id: 1
+  sessionName: MyString
+  duration: MyString
+  cost: 1.5
+  defaultLocation: MyString
+  maxNumber: 1

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  registeredProgram_id: 1
+  session_id: 1
+  program_id: 1
+  user_id: 1
+  client_id: 1
+
+two:
+  registeredProgram_id: 1
+  session_id: 1
+  program_id: 1
+  user_id: 1
+  client_id: 1
